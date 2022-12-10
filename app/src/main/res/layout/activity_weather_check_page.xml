@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container"
+    android:paddingHorizontal="40sp"
+    tools:context=".WeatherCheckPage">
+
+    <!-- Main Container -->
+    <!-- To make all content is in center of layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        >
+
+        <!-- API Key Container  -->
+        <LinearLayout
+            android:id="@+id/api_key_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10sp"
+            >
+
+            <!-- API Key Label -->
+            <TextView
+                android:id="@+id/api_key_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your API Key"
+                android:textColor="#F7616E"
+                android:fontFamily="@font/poppins_medium"
+                />
+
+            <!-- API Key Input -->
+            <EditText
+                android:id="@+id/api_key_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ff9f895b2e884d6680530135202710"
+                android:fontFamily="@font/poppins_medium"
+                android:inputType="text"
+                />
+
+        </LinearLayout>
+
+        <!-- City Name Container  -->
+        <LinearLayout
+            android:id="@+id/city_container"
+            android:layout_below="@+id/api_key_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10sp"
+            >
+
+            <!-- City Name Label -->
+            <TextView
+                android:id="@+id/city_name_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="City Name"
+                android:textColor="#F7616E"
+                android:fontFamily="@font/poppins_medium"
+                />
+
+            <!-- City Name Input -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/city_name_input_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select City"
+                android:fontFamily="@font/poppins_medium"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu">
+
+                <AutoCompleteTextView
+                    android:outlineAmbientShadowColor="#F7616E"
+                    android:id="@+id/autocomplete_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    android:fontFamily="@font/poppins_medium"
+                    android:outlineSpotShadowColor="#F7616E"
+                    android:focusable="false"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <!-- Button  -->
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_below="@+id/city_container"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Submit"
+            android:backgroundTint="#F7616E"
+            android:fontFamily="@font/poppins_medium"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

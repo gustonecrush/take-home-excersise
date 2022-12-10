@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="40sp"
+    tools:context=".ResultPage"
+    android:id="@+id/container"
+    >
+
+    <!-- Main Container -->
+    <!-- To make all content is in center of layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100sp"
+        >
+
+        <!-- Celcius Container  -->
+        <LinearLayout
+            android:id="@+id/celcius_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10sp"
+            >
+
+            <!-- Celcius Label -->
+            <TextView
+                android:id="@+id/celcius_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Celcius"
+                android:textColor="#F7616E"
+                android:fontFamily="@font/poppins_medium"
+                />
+
+            <!-- Celcius Input -->
+            <EditText
+                android:id="@+id/celcius_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ff9f895b2e884d6680530135202710"
+                android:fontFamily="@font/poppins_medium"
+                android:inputType="text"
+                />
+
+        </LinearLayout>
+
+        <!-- Farenheit Container  -->
+        <LinearLayout
+            android:id="@+id/city_container"
+            android:layout_below="@+id/celcius_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10sp"
+            >
+
+            <!-- Farenheit Label -->
+            <TextView
+                android:id="@+id/farenheit_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Farenheit"
+                android:textColor="#F7616E"
+                android:fontFamily="@font/poppins_medium"
+                />
+
+            <!-- Farenheit Input -->
+            <EditText
+                android:id="@+id/farenheit_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ff9f895b2e884d6680530135202710"
+                android:fontFamily="@font/poppins_medium"
+                android:inputType="text"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
