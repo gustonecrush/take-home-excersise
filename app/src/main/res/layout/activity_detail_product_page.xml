@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailProductPage">
+
+    <!-- Jumbotron -->
+    <RelativeLayout
+        android:id="@+id/jumbotron"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@drawable/hamper_001"
+        >
+
+        <!-- Header -->
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="20sp"
+            android:paddingVertical="30sp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Back Button -->
+                <ImageView
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:src="@drawable/ic_back_black"
+                    android:layout_centerVertical="true"
+                    />
+
+                <!-- Heading -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Detail Produk"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!-- Info -->
+    <RelativeLayout
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/jumbotron"
+        android:layout_marginTop="-45dp"
+        android:background="@drawable/card"
+        android:paddingHorizontal="30sp"
+        android:paddingTop="30sp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Top Section -->
+                <RelativeLayout
+                    android:id="@+id/top_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- Info Product -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border_radius"
+                            android:backgroundTint="#339458"
+                            android:fontFamily="@font/poppins_medium"
+                            android:gravity="center"
+                            android:padding="7sp"
+                            android:text="Hampers Lebaran"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8sp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Hampers Type A"
+                            android:textColor="@color/black"
+                            android:textSize="25sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-5sp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_star" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:text="4.8"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" | "
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:text="8 terjual"
+                                    android:textColor="#515252"
+                                    android:textSize="15sp" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- Love, Price, and Add Btn -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="30sp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginBottom="20sp"
+                            android:src="@drawable/ic_favorite" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="IDR 115.000"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/border_radius"
+                                android:backgroundTint="#8EB38C"
+                                android:src="@drawable/ic_remove" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/poppins_bold"
+                                android:text="1"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/border_radius"
+                                android:backgroundTint="#339458"
+                                android:src="@drawable/ic_add" />
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <!-- Description Section -->
+                <LinearLayout
+                    android:id="@+id/desc_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/top_section"
+                    android:orientation="vertical">
+
+                    <!-- Heading -->
+                    <TextView
+                        android:id="@+id/heading_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10sp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Deskripsi"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <!-- Description -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="1 Tanaman (Philodendron burle-marxii)"
+                        android:textColor="#5F6462"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="1 Kartu Ucapan (Christmas/New Year)"
+                        android:textColor="#5F6462"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Care Tips"
+                        android:textColor="#5F6462"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Paper Bag"
+                        android:textColor="#5F6462"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Additional Cookes (Putri Salju/Choco Mede)"
+                        android:textColor="#5F6462"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <!-- Rating Section -->
+                <RelativeLayout
+                    android:id="@+id/rating_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/desc_section"
+                    android:layout_marginTop="15sp"
+                    android:background="@drawable/border_radius"
+                    android:backgroundTint="@color/white">
+
+                    <!-- Rating -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="9sp">
+
+                        <!-- Heading -->
+                        <TextView
+                            android:id="@+id/heading_rating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10sp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Rating Produk"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-10sp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="15sp"
+                                    android:layout_height="15sp"
+                                    android:src="@drawable/ic_star" />
+
+                                <ImageView
+                                    android:layout_width="15sp"
+                                    android:layout_height="15sp"
+                                    android:src="@drawable/ic_star" />
+
+                                <ImageView
+                                    android:layout_width="15sp"
+                                    android:layout_height="15sp"
+                                    android:src="@drawable/ic_star" />
+
+                                <ImageView
+                                    android:layout_width="15sp"
+                                    android:layout_height="15sp"
+                                    android:src="@drawable/ic_star" />
+
+                                <ImageView
+                                    android:layout_width="15sp"
+                                    android:layout_height="15sp"
+                                    android:src="@drawable/ic_star" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginTop="-3sp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:text="5.0"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginTop="-3sp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="(8 Ulasan)"
+                                android:textColor="#5F6462"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <!-- Lihat Semua -->
+
+                </RelativeLayout>
+
+                <!-- Checkout and Add Chart Section -->
+                <LinearLayout
+                    android:id="@+id/checkout_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rating_section"
+                    android:layout_marginTop="15sp"
+                    android:orientation="horizontal">
+
+                    <!-- Checkout Button -->
+                    <Button
+                        android:layout_width="280sp"
+                        android:layout_height="61sp"
+                        android:layout_marginRight="10sp"
+                        android:backgroundTint="#23CD85"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Checkout"
+                        android:textAllCaps="false"
+                        android:textSize="15sp" />
+
+                    <!-- Add Chart Button -->
+
+                    <ImageButton
+                        android:layout_width="60sp"
+                        android:layout_height="53sp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="4sp"
+                        android:background="@drawable/border_radius"
+                        android:padding="15sp"
+                        android:src="@drawable/ic_add_shoping_chart" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

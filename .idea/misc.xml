@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/border_radius.xml" value="0.1065" />
+        <entry key="app/src/main/res/drawable/card.xml" value="0.1065" />
+        <entry key="app/src/main/res/layout/activity_detail_product_page.xml" value="0.1023162841796875" />
         <entry key="app/src/main/res/layout/activity_result_page.xml" value="0.12132725430597771" />
         <entry key="app/src/main/res/layout/activity_weather_check_page.xml" value="0.12132725430597771" />
         <entry key="app/src/main/res/layout/list_city.xml" value="0.12082066869300911" />

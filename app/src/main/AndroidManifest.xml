@@ -14,10 +14,7 @@
         android:theme="@style/Theme.TakeHomeExcersise"
         tools:targetApi="31">
         <activity
-            android:name=".ResultPage"
-            android:exported="false" />
-        <activity
-            android:name=".WeatherCheckPage"
+            android:name=".DetailProductPage"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,15 +22,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<!--        <activity-->
-<!--            android:name=".MainActivity"-->
-<!--            android:exported="true">-->
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-<!--        </activity>-->
+        <activity
+            android:name=".ResultPage"
+            android:exported="false" />
+        <activity
+            android:name=".WeatherCheckPage"
+            android:exported="false" />
     </application>
 
 </manifest>
