@@ -12,9 +12,7 @@ If you want to run in your local do the steps below :
 
 ## RESULT
 
-<div style="display: flex">
-<img src="https://i.postimg.cc/vBQ2fMq5/Screen-Shot-2022-10-01-at-18-23-57.png" />
-</div>
+
 
 
 
